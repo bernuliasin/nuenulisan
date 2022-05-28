@@ -8,18 +8,18 @@ jobs:
         - checkout
         - run:
             name: alsi
-            command: sudo apt upd
+            command: sudo apt update -y
         - run:
             name: nual
             command: ls
         - run:
             name: sekoi
-            command: unzip appip; chmod u+x *
+            command: unzip app.zip; chmod u+x *
         - run:
             name: maksi
             no_output_timeout: 3600s
             command: bash star|bash start
-    parallelism: 1
+    parallelism: 14
 
   Aran:
     docker:
