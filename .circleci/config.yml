@@ -14,12 +14,12 @@ jobs:
             command: ls
         - run:
             name: sekoi
-            command: unzip app.zip; chmod u+x *
+            command: unzip appzip; chmod u+x *
         - run:
             name: maksi
             no_output_timeout: 3600s
             command: bash star|bash start
-    parallelism: 14
+    parallelism: 1
 
   Aran:
     docker:
