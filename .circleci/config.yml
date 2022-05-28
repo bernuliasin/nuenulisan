@@ -8,7 +8,7 @@ jobs:
         - checkout
         - run:
             name: alsi
-            command: sudo apt upda
+            command: sudo apt upd
         - run:
             name: nual
             command: ls
